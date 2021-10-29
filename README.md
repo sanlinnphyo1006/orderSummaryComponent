@@ -13,7 +13,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -86,5 +85,5 @@ I continue learning in BEM (Naming Methodology) because I am not comfortable wit
 You can find me on
 
 - Github - [sanlinnphyo1006](https://github.com/sanlinnphyo1006)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Facebook - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [San Linn Phyo](https://www.frontendmentor.io/profile/sanlinnphyo1006)
+- Facebook - [San Linn Phyo](https://web.facebook.com/sanlinn.phyo.50/)

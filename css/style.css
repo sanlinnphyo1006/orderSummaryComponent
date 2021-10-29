@@ -70,6 +70,7 @@ body {
 
 .card__title {
   margin-top: 0;
+  font-weight: 900;
 }
 
 .card__paragraph {
@@ -93,6 +94,7 @@ body {
 
 .card__wrapper {
   gap: 1rem;
+  text-align: left;
 }
 
 .card__musicIconContainer {
@@ -102,16 +104,20 @@ body {
 .card__pricePlan {
   margin-block: 0;
   font-size: 1rem;
+  font-weight: 900;
+}
+
+.card__priceAmount,
+.card__pricePlanChange {
+  font-weight: 700;
 }
 
 .card__priceAmount {
   font-size: 0.9rem;
-  font-weight: 700;
   color: var(--desaturatedBlue);
 }
 
 .card__pricePlanChange {
-  font-weight: 700;
   color: var(--brightBlue);
   font-size: 0.8rem;
 }
@@ -152,10 +158,6 @@ body {
 
   .card__content {
     padding: 3rem;
-  }
-
-  .card__pricePlan {
-    font-size: 1.2rem;
   }
 
   .card__priceAmount {
