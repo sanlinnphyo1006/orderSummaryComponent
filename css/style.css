@@ -1,0 +1,169 @@
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+  --boxShadowClr: hsla(223, 47%, 23%, 0.4);
+  --white: #fff;
+  --fs-default: 16px;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--fs-default);
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  width: 100%;
+  padding-block: 4.4rem;
+  background: var(--paleBlue) url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Blocks --start--*/
+.btn {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+}
+
+.card {
+  width: 90%;
+  max-width: 30rem;
+  margin: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem 0 var(--boxShadowClr);
+}
+
+.attribution {
+  width: 90%;
+  margin: 3rem auto 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Blocks --end--*/
+
+/* Elements --start--*/
+.card__heroImg {
+  width: 100%;
+  display: block;
+}
+
+.card__content {
+  padding: 2rem;
+  text-align: center;
+  color: var(--darkBlue);
+  background: var(--white);
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__paragraph {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--desaturatedBlue);
+}
+
+.card__priceContainer,
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__priceContainer {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--veryPaleBlue);
+}
+
+.card__wrapper {
+  gap: 1rem;
+}
+
+.card__musicIconContainer {
+  background: var(--desaturatedBlue);
+}
+
+.card__pricePlan {
+  margin-block: 0;
+  font-size: 1rem;
+}
+
+.card__priceAmount {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--desaturatedBlue);
+}
+
+.card__pricePlanChange {
+  font-weight: 700;
+  color: var(--brightBlue);
+  font-size: 0.8rem;
+}
+
+.card__pricePlanChange:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.8);
+}
+
+.card__paymentBtn {
+  background: var(--brightBlue);
+  color: var(--veryPaleBlue);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-block: 2rem 1rem;
+  box-shadow: 0 0.5rem 1rem 0 var(--boxShadowClr);
+}
+
+.card__paymentBtn:hover {
+  background: hsla(245, 75%, 52%, 0.8);
+}
+
+.card__cancelBtn {
+  color: var(--desaturatedBlue);
+}
+
+.card__cancelBtn:hover {
+  color: var(--darkBlue);
+}
+/* Elements --end--*/
+
+/* @Media --start-- */
+@media screen and (min-width: 768px) {
+  body {
+    background: var(--paleBlue) url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+
+  .card__content {
+    padding: 3rem;
+  }
+
+  .card__pricePlan {
+    font-size: 1.2rem;
+  }
+
+  .card__priceAmount {
+    font-size: 1rem;
+  }
+
+  .card__pricePlanChange {
+    font-size: 0.9rem;
+  }
+}
+/* @Media --end-- */
